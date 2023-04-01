@@ -12,7 +12,7 @@ async function fetchData(setData) {
 }
 
 async function fetchSetData(data) {
-  await fetch(API_GET_DATA, {
+  await fetch(API_GET_DATA_RENDER, {
     method: "PUT",
     headers: {
       "Content-type": "application/json"
