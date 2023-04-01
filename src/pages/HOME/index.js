@@ -2,11 +2,11 @@ import Edit from "./components/Edit";
 import List from "./components/List";
 import "./index.css";
 import { useState, useEffect, useRef } from "react";
-import { API_GET_DATA } from "../../global/constants"
+import { API_GET_DATA_RENDER } from "../../global/constants"
 // const [edit, setEdit] = useState(100) react hook 要寫在 React function component、custom React hook function 中
 
 async function fetchData(setData) {
-  const res = await fetch(API_GET_DATA)
+  const res = await fetch(API_GET_DATA_RENDER)
   const { data } = await res.json()
   setData(data)
 }
